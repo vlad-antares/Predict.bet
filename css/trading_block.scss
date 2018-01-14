@@ -1,0 +1,716 @@
+.trading_block{
+	width: 100%;
+	float: left;
+	display: flex;
+	z-index: 999999;
+	margin-top: -5px;
+	justify-content: center;
+	flex-direction: column;
+	background: url(../img/second_bg.png) no-repeat;
+	background-position-y:-500px;
+}
+.trading_block__peer_to_peer{
+	width: 100%;
+	float: left;
+	padding-top: 100px;
+	margin-bottom: 222px;
+}
+.trading_block__peer_to_peer__left_ipad_block{
+	width: 63%;
+	float: left;
+	padding-left: 40px;
+	padding-right: 15px;
+	position: relative;
+	img{
+		width: 100%;
+		float: left;
+	}
+	.ipad_gif{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		padding: 25px 60px 25px 80px;
+		height: 100%;
+	}
+}
+.trading_block__peer_to_peer__right_text_block{
+	width: 37%;
+	float: left;
+	padding-left: 35px;
+	padding-top: 100px;
+	span{
+		color: #ffffff;
+		width: 100%;
+		float: left;
+		font-family: "Arista Pro Trial";
+		font-size: 34px;
+		line-height: 38px;
+		margin-bottom: 17px;
+		text-transform: uppercase;
+		/* Text style for "unparallel" */
+		letter-spacing: 1.7px;
+	}
+	p{
+		width: 100%;
+		float: left;
+		color: #ffffff;
+		font-family: 'RR';
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 24px;
+		/* Text style for "We will de" */
+		letter-spacing: 0.9px;
+		margin-bottom: 19px;
+	}
+}
+.trading_block__peer_to_peer__right_text_block__ul{
+	width: 100%;
+	float: left;
+	padding-left: 5px;
+	li{
+		width: 100%;
+		float: left;
+		position: relative;
+		margin-bottom: 10px;
+		color: #ffffff;
+		font-family: 'RL';
+		font-size: 16px;
+		font-weight: 300;
+		/* Text style for "Create Mar" */
+		letter-spacing: 0.8px;
+		line-height: 30px;
+		/* Text style for "(enabled b" */
+		letter-spacing: 0.8px;
+		line-height: 20px;
+		padding-left: 20px;
+	}
+	li:before{
+		content:'';
+		position: absolute;
+		width: 8px;
+		height: 8px;
+		background-color: #FFF;
+		border-radius: 100%;
+		display: block;
+		left:0;
+		top:0%;
+		transform:translateY(65%);
+	}
+}
+.trading_block__predictions{
+	width: 100%;
+	float: left;
+	p{
+		width: 100%;
+		color: #ffffff;
+		font-family: 'RR';
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 22px;
+		/* Text style for "This is Ph" */
+		letter-spacing: 0.8px;
+		text-align: center;
+		max-width: 760px;
+		margin-bottom: 31px;
+	}
+}
+.trading_block__predictions__span{
+	width: 100%;
+	float: left;
+	color: #ffffff;
+	font-family: "Arista Pro Trial";
+	font-size: 34px;
+	line-height: 38px;
+	text-transform: uppercase;
+	/* Text style for "featured p" */
+	letter-spacing: 1.7px;
+	text-align: center;
+	margin-bottom: 13px;
+}
+.trading_block__predictions__create_butt{
+	width: 100%;
+	float: left;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+	a{
+		width: auto;
+		color: #ffffff;
+		font-family:'RR';
+		font-size: 16px;
+		font-weight: 900;
+		padding: 0 25px;
+		line-height: 60px;
+		text-decoration: none;
+		text-transform: uppercase;
+		/* Text style for "create you" */
+		letter-spacing: 0.8px;
+		box-shadow: 0 0 34px 4px rgba(46, 225, 238, 0.52);
+		border-radius: 20px;
+		transition:0.5s;
+		background-color: #ffffff;
+	    background-image: -webkit-linear-gradient(bottom, #2de1f1 0%, #39d8ad 100%);
+	    background-image: -o-linear-gradient(bottom, #2de1f1 0%, #39d8ad 100%);
+	    background-image: linear-gradient(to top, #2de1f1 0%, #39d8ad 100%);
+	}	
+	a:hover{
+		transition:0.5s;
+		background-image: -webkit-linear-gradient(top, #2de1f1 0%, #39d8ad 100%);
+	    background-image: -o-linear-gradient(top, #2de1f1 0%, #39d8ad 100%);
+	    background-image: linear-gradient(to bottom, #2de1f1 0%, #39d8ad 100%);
+	}
+}
+.trading_block__predictions__slider_block{
+	width: 100%;
+	float: left;
+	margin-bottom: 100px;
+	.slick-next,.slick-prev{
+		display: none!important;
+	}
+	.slick-dots{
+		width: auto;
+		margin:0 auto;
+		left:50%;
+		position: absolute;
+		bottom:-50px;
+		transform:translateX(-50%);
+		li{
+			width: 6px;
+			height: 6px;
+			border-radius: 100%;
+			float: left;
+			button{
+				border:none;
+				cursor: pointer;
+				padding: 0;
+				width:6px!important;
+				height:6px !important;
+				border-radius: 100%;
+				box-shadow: 0 0 34px 4px rgba(121, 143, 248, 0.44);
+				background-color: #ffffff;
+				opacity: 0.4;
+				text-indent: -999999px;
+			}
+		}
+		li:not(:last-child){
+			margin-right: 20px;
+		}
+		li.slick-active{
+			box-shadow: 0 0 34px 4px rgba(121, 143, 248, 0.44);
+			background-color: #ffffff;
+		}
+	}
+}
+.trading_block__predictions__slider_block__card{
+	box-shadow: 0 0 34px 4px rgba(255, 255, 255, 0.22);
+	border-radius: 20px;
+	background-color: #ffffff;
+	margin-bottom: 20px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.trading_block__predictions__slider_block__card__header{
+	width: 100%;
+	float: left;
+	display: flex;
+}
+.trading_block__predictions__slider_block__card__header__left_block{
+	width: 40%;
+	float: left;
+	img{
+		width: 100%;
+		float: left;
+		border-radius: 20px;
+	}
+}
+.trading_block__predictions__slider_block__card__header__right_block{
+	width: 60%;
+	float: left;
+	padding-top: 22px;
+	padding-left: 22px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	padding-right: 20px;
+	h3{
+		width: 100%;
+		float: left;
+		color: #477099;
+		font-family: 'RR';
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 22px;
+		/* Text style for "Trump stil" */
+		letter-spacing: 0.9px;
+		margin-bottom: 14px;
+	}
+	h5{
+		width: 100%;
+		float: left;
+		color: #477099;
+		font-family: 'RR';
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 20px;
+		/* Text style for "Will Trump" */
+		letter-spacing: 0.7px;
+	}
+}
+.trading_block__predictions__slider_block__card__header__right_block__left_bottom{
+	width: 50%;
+	float: left;
+	display: flex;
+	align-items: center;
+	img{
+		width: 40px;
+		height: auto;
+		float: left;
+		max-width: 100%;
+	}
+	span{
+		width: calc(~'100% - 40px');
+		float: left;
+		padding-left: 5px;
+		color: #434b52;
+		font-family: 'RB';
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 30px;
+	}
+}
+.trading_block__predictions__slider_block__card__header__right_block__right_bottom{
+	width: 50%;
+	float: left;
+	display: flex;
+	justify-content: flex-end;
+	img{
+		width: 20px;
+		height: auto;
+		float: left;
+		max-width: 100%;
+	}
+	span{
+		width: calc(~'100% - 20px');
+		float: left;
+		color: #434b52;
+		font-family:'RR';
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 19.19px;
+		/* Text style for "Comments:" */
+		font-weight: 400;
+		padding-left: 9px;
+		/* Text style for "143 ," */
+		i{
+			font-weight: 700;	
+		}
+	}
+}
+.trading_block__predictions__slider_block__card__header__right_block__bottom{
+	width: 100%;
+	float: left;
+	display: flex;
+	align-items: center;
+}
+.trading_block__predictions__slider_block__card__header__right_block__text{
+	width: 100%;
+	float: left;
+}
+.trading_block__predictions__slider_block__card__body{
+	width: 100%;
+	float: left;
+	padding: 27px 21px 29px 18px;
+	position: relative;
+}
+.trading_block__predictions__slider_block__card__body__title_block{
+	width: 100%;
+	float: left;
+}
+.trading_block__predictions__slider_block__card__body__title_block__left{
+	width: 40%;
+	float: left;
+	h4{
+		width: 100%;
+		float: left;
+		color: #434b52;
+		font-family: 'RR';
+		font-size: 16px;
+		font-weight: 400;
+		display: flex;
+		align-items: center;
+		span{
+			width: auto;
+			float: right;
+			color: #434b52;
+			padding-left: 5px;
+			font-family: "Arista Pro Trial";
+			font-size: 14px;
+			font-weight: 700;
+			display: flex;
+			align-items: flex-end;
+			/* Text style for "(pred)" */
+			letter-spacing: 0.7px;
+			i{
+				width: auto;
+				float: right;
+				color: #434b52;
+				font-family: 'RB';
+				font-size: 16px;
+				font-weight: 700;
+			}
+		}
+	}
+}
+.trading_block__predictions__slider_block__card__body__title_block__right{
+	width: 60%;
+	float: left;
+	h4{
+		width: 100%;
+		float: left;
+		color: #434b52;
+		font-family: 'RR';
+		font-size: 16px;
+		font-weight: 400;
+		text-align: right;
+		span{
+			font-weight: 700;
+			width: auto;
+			float: right;
+			padding-left: 5px;
+		}
+	}
+}
+.trading_block__predictions__slider_block__card__body__top_line_block{
+	width: 100%;
+	float: left;
+	background-color: #ff5a00;
+	border-radius: 8px;
+	height: 8px;
+	margin-top: 12px;
+    background-image: -webkit-linear-gradient(bottom, #2de1f1 0%, #39d8ad 100%);
+    background-image: -o-linear-gradient(bottom, #2de1f1 0%, #39d8ad 100%);
+    background-image: linear-gradient(to top, #2de1f1 0%, #39d8ad 100%);
+	.trading_block__predictions__slider_block__card__body__top_line_block__left_span{
+		width: 37%;
+		height: 8px;
+		float: left;
+		display: block;
+		border-radius: 8px;
+		background-color: #65bc41;
+	    background-image: -webkit-linear-gradient(bottom, #4989ef 0%, #8766fb 100%);
+	    background-image: -o-linear-gradient(bottom, #4989ef 0%, #8766fb 100%);
+	    background-image: linear-gradient(to top, #4989ef 0%, #8766fb 100%);
+	}
+}
+.trading_block__predictions__slider_block__card__body__hover_info{
+	width: auto;
+	position: absolute;
+	bottom:-20px;
+	right:33%;
+	display: none;
+	transform:translateX(50%);
+	padding: 10px 40px;
+	z-index: 99999999;
+	border-radius:20px;
+    background-image: -webkit-linear-gradient(bottom, #2de1f1 0%, #39d8ad 100%);
+    background-image: -o-linear-gradient(bottom, #2de1f1 0%, #39d8ad 100%);
+    background-image: linear-gradient(to top, #2de1f1 0%, #39d8ad 100%);
+	h5{
+		width: auto;
+		float: left;
+		display: block;
+		position: relative;
+		width: 205px;
+		height: 15px;
+		color: #ffffff;
+		font-family: 'RR';
+		line-height: 15px;
+		font-size: 14px;
+		font-weight: 400;
+		span{
+			width: auto;
+			float: right;
+			font-weight: 700;
+		}
+		i{
+			font-family: "Arista Pro Trial";
+			font-weight: 400;
+		}
+	}
+	h5:before{
+		 content: '';
+		  position: absolute;
+		  width: 0;
+		  height: 0;
+		  border: 10px solid transparent;
+		  border-bottom-color: #36dab4;
+		  left: 50%;
+		  bottom: 100%;
+		  transform:translateY(-30%);
+		  margin-left: -10px;
+	}
+}
+.trading_block__predictions__slider_block__card__body__top_line_block__right_span{
+	width: 63%;
+	height: 8px;
+	cursor: pointer;
+	float: left;
+}
+.trading_block__predictions__slider_block__card__body__hover_info__dn{
+	display: block;
+}
+.roadmap_block{
+	width: 100%;
+	float: left;
+	margin-top: 140px;
+	margin-bottom: 220px;
+}
+.roadmap_block__title_block{
+	width: 100%;
+	float: left;
+	span{
+		width: 100%;
+		float: left;
+		color: #ffffff;
+		font-family: "Arista Pro Trial";
+		font-size: 34px;
+		line-height: 38px;
+		text-transform: uppercase;
+		/* Text style for "our roadma" */
+		letter-spacing: 1.7px;
+		text-align: center;
+	}
+}
+.roadmap_block__year_block{
+	width: 100%;
+	float: left;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-bottom: 14px;
+	li{
+		width: auto;
+		color: #ffffff;
+		font-family:'RB';
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 24px;
+		text-transform: uppercase;
+	}
+}
+.roadmap_block__timline_img{
+	width: 100%;
+	float: left;
+	padding: 0 35px;
+}
+.roadmap_block__year_info_block{
+	width: 100%;
+	float: left;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 5px;
+	li{
+		width: 10%;
+		text-align: center;
+		color: #ffffff;
+		font-family: 'RR';
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 20px;
+	}
+}
+.roadmap_block__number_block{
+	width: 100%;
+	float: left;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 35px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	li{
+		width: 5%;
+		color: #ffffff;
+		font-family: 'RL';
+		font-size: 20px;
+		font-weight: 300;
+		text-align: center;
+		line-height: 24px;
+		text-transform: uppercase;
+	}
+}
+@media(max-width:1200px){
+	.trading_block__predictions__slider_block__card__body__title_block {
+	    display: flex;
+	    align-items: center;
+    }
+    .roadmap_block__title_block{
+    	transform:scale(0.9);
+    }
+}
+@media(max-width:1024px){
+	.trading_block__predictions__slider_block__card__header__right_block__bottom{
+		flex-direction: column;
+	}
+	.trading_block__predictions__slider_block__card__header__right_block__right_bottom{
+		width: 60%;
+	}
+}
+@media(max-width:991px){
+	.roadmap_block{
+		margin-top: 40px;
+	}
+	.trading_block__peer_to_peer{
+		margin-bottom: 120px;
+	}
+	.roadmap_block__title_block{
+    	transform:scale(0.8);
+    }
+    .roadmap_block__timline_img{
+    	padding: 0 20px;
+    }
+    .roadmap_block__number_block{
+    	padding: 0 20px;
+    }
+    .roadmap_block__year_block{
+    	padding: 0 20px;
+    }
+}
+@media(max-width:970px){
+	.trading_block__predictions__slider_block__card__header__right_block__bottom{
+		flex-direction: row;
+	}
+	.trading_block__predictions__slider_block__card{
+		border-radius: 35px;
+	}
+	.trading_block__peer_to_peer__right_text_block span{
+		font-size: 28px;
+	}
+}
+@media(max-width:768px){
+	.trading_block__peer_to_peer__left_ipad_block{
+		width: 100%;
+	}
+	.trading_block__peer_to_peer__right_text_block{
+		width: 100%;
+		padding-top: 50px;
+	}
+	.trading_block__peer_to_peer{
+		padding-top: 20px;
+	}
+	.roadmap_block{
+		margin-bottom: 75px;
+	}
+}
+@media(max-width:700px){
+	.roadmap_block__year_info_block li{
+		font-size: 12px;
+	}
+	.roadmap_block{
+		margin-bottom: 140px;
+	}
+}
+@media(max-width:600px){
+	.trading_block__peer_to_peer__left_ipad_block .ipad_gif {
+	    padding: 20px 55px 20px 80px;
+	}
+	.roadmap_block__title_block {
+	    transform: scale(1);
+	}
+	.roadmap_block__year_block li, .roadmap_block__number_block li{
+		font-size: 15px;
+	}
+	.roadmap_block__timline_img, .roadmap_block__year_block, .roadmap_block__number_block, .roadmap_block__year_info_block{
+		padding: 0;
+	}
+	.roadmap_block__year_info_block li{
+		font-size: 10px;
+		line-height: 15px;
+		width: 16%;
+		padding-left: 3px;
+		padding-right: 3px;
+	}
+	.roadmap_block__number_block li{
+		width: 16%;
+	}
+	.roadmap_block{
+		margin-bottom: 30px;
+	}
+	.roadmap_block__title_block span{
+		font-size: 20px;
+	}
+	.roadmap_block__year_block{
+		margin-top: 20px;
+	}
+	.trading_block__predictions__slider_block__card__header{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-top: 10px;
+	}
+	.trading_block__predictions__slider_block__card__header__right_block__bottom{
+		flex-direction: column;
+	}
+	.trading_block__predictions__slider_block__card__header__right_block h3{
+		font-size: 16px;
+	}
+	.trading_block__predictions__slider_block__card__header__right_block h5{
+		text-align: center;
+	}
+	.trading_block__predictions__slider_block__card__header__right_block__left_bottom, .trading_block__predictions__slider_block__card__body__title_block__left{
+		margin-bottom: 10px;
+	}
+	.trading_block__predictions__slider_block__card__body__title_block{
+		flex-direction: column;
+	}
+	.trading_block__predictions__slider_block__card__header__right_block{
+		width: 100%;
+	}
+	.trading_block__predictions__slider_block__card__header__right_block h3{
+		text-align: center;
+	}
+	.trading_block__predictions__slider_block__card__body{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.trading_block__predictions__slider_block__card__body__title_block__left{
+		width: 100%;
+	}
+	.trading_block__predictions__slider_block__card__body__title_block__right{
+		width: 100%;
+	}
+	.trading_block__predictions__slider_block__card__body__title_block__left h4{
+		justify-content: center;
+	}
+	.trading_block__predictions__slider_block__card__body__title_block__right h4{
+		display: flex;
+		justify-content: center;
+	}
+	.trading_block__predictions__slider_block__card__body__title_block__right h4 span{
+		width: 50%;
+	}
+	.trading_block__predictions__span, .trading_block__peer_to_peer__right_text_block span{
+		font-size: 20px;
+	}
+	.trading_block__peer_to_peer__right_text_block{
+		padding-left: 0;
+	}
+	.trading_block__peer_to_peer{
+		margin-bottom: 30px;
+	}
+	.trading_block__peer_to_peer__right_text_block span{
+		line-height: 25px;
+		text-align: center;
+	}
+}
+
+@media(max-width:320px){
+	.trading_block__peer_to_peer__left_ipad_block .ipad_gif {
+	    padding: 10px 35px 10px 60px;
+	}
+}

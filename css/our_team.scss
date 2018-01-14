@@ -1,0 +1,244 @@
+.our_team_block{
+	width: 100%;
+	float: left;
+	margin-bottom: 180px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+.team_img_1{
+	position: absolute;
+	width: auto;
+	height: auto;
+	left:3%;
+	top:30%;
+	opacity: 0.22;
+}
+.team_img_2{
+	position: absolute;
+	width: auto;
+	height: auto;
+	left:50%;
+	top:30%;
+	opacity: 0.1;
+}
+.team_img_3{
+	position: absolute;
+	width: auto;
+	height: auto;
+	right:5%;
+	top:50%;
+	opacity: 0.36;
+}
+.our_team_block__slider__card{
+	width: 100%;
+	float: left;
+	margin:0 47px 0 21px;
+}
+.our_team_block__title_block{
+	width: 100%;
+	float: left;
+	margin-bottom: 40px;
+	span{
+		width: 100%;
+	    float: left;
+	    background-image: linear-gradient(to top, rgba(73, 137, 239, 0.8) 0%, rgba(135, 102, 251, 0.8) 100%);
+	    color: #ffffff;
+	    text-align: center;
+	    font-family: "Arista Pro Trial";
+	    font-size: 34px;
+	    margin-bottom: 3px;
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+	    text-transform: uppercase;
+	    letter-spacing: 1.7px;
+	}
+}
+.our_team_block__slider{
+	width: 100%;
+	float: left;
+	.slick-next,.slick-prev{
+		display: none!important;
+	}
+	.slick-dots{
+		width: auto;
+		margin:0 auto;
+		left:50%;
+		position: absolute;
+		bottom:0px;
+		transform:translateX(-50%);
+		li{
+			width: 6px;
+			height: 6px;
+			border-radius: 100%;
+			float: left;
+			button{
+				border:none;
+				cursor: pointer;
+				padding: 0;
+				width:6px!important;
+				height:6px !important;
+				border-radius: 100%;
+				box-shadow: 0 0 34px 4px rgba(121, 143, 248, 0.44);
+				background-color: #000000;
+				opacity: 0.25;
+				text-indent: -999999px;
+			}
+		}
+		li:not(:last-child){
+			margin-right: 20px;
+		}
+		li.slick-active{
+			box-shadow: 0 0 34px 4px rgba(121, 143, 248, 0.44);
+			background-color: #ffffff;
+		    background-image: -webkit-linear-gradient(bottom, #4989ef 0%, #8766fb 100%);
+		    background-image: -o-linear-gradient(bottom, #4989ef 0%, #8766fb 100%);
+		    background-image: linear-gradient(to top, #4989ef 0%, #8766fb 100%);
+		}
+	}
+}
+.our_team_block__slider__card__top_block{
+	width: 100%;
+	float: left;
+	position: relative;
+	margin-top: 50px;
+	margin-bottom: 90px;
+}
+.our_team_block__slider__card__top_block__photo{
+	width: 51%;
+	float: left;
+	height: auto;
+	border-radius: 100%;
+	padding: 10px;
+	position: absolute;
+	top:50%;
+	left:0px;
+	transform:translateY(-50%);
+	z-index: 9999999999;
+	box-shadow: 0 0 34px 4px rgba(121, 143, 248, 0.22);
+	background-color: #ffffff;
+	img{
+		width: 100%;
+		float: left;
+		height: 100%;
+	}
+}
+.our_team_block__slider__card__top_block__info_block{
+	width: 100%;
+	float: left;
+	box-shadow: 0 0 34px 4px rgba(121, 143, 248, 0.22);
+	background-color: #ffffff;
+	border-radius: 20px;
+	position: relative;
+	margin-left: 30px;
+	padding-top: 23px;
+	padding-bottom: 25px;
+	padding-left: 155px;
+	h3{
+		width: 100%;
+		float: left;
+		color: #477099;
+		font-family: 'RB';
+		font-size: 18px;
+		font-weight: 700;
+		/* Text style for "Jeffrey Be" */
+		letter-spacing: 0.9px;
+	}
+	h4{
+		width: 100%;
+		float: left;
+		color: #477099;
+		margin-top: 9px;
+		font-family: 'RL';
+		font-size: 16px;
+		font-weight: 300;
+		/* Text style for "CEO & Co-F" */
+		letter-spacing: 0.8px;
+	}
+}
+.our_team_block__slider__card__top_block__info_block__social_ul{
+	width: 100%;
+	float: left;
+	margin-top: 12px;
+	li{
+		width: auto;
+		float: left;
+		a{
+			width: auto;
+			float: left;
+			color: #477099;
+			opacity: 0.7;
+		}
+	}
+	li:not(:last-child){
+		margin-right: 20px;
+	}
+}
+.our_team_block__slider__card__bottom_block{
+	width: 100%;
+	float: left;
+	margin-bottom: 60px;
+	position: relative;
+}
+@media(max-width:1200px){
+	.our_team_block__slider__card__top_block__info_block{
+		padding-left: 190px;
+	}
+	.our_team_block__slider__card__top_block__photo{
+		width: 40%;
+	}
+	.our_team_block__slider__card__top_block{
+		margin-bottom: 105px;
+	}
+}
+@media(max-width:991px){
+	.our_team_block{
+		margin-top: 50px;
+	}
+}
+@media(max-width:910px){
+	.our_team_block__slider__card__top_block__photo {
+	    width: 164px;
+	}
+	.our_team_block{
+		margin-top: 0px;
+	}
+
+}
+@media(max-width:768px){
+	.our_team_block{
+		margin-bottom: 75px;
+	}
+}
+
+@media(max-width:600px){
+	.our_team_block__slider__card__top_block__photo{
+		width: 115px;
+	}
+	.our_team_block__slider__card__top_block__info_block{
+		padding-left: 90px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.our_team_block__slider__card__top_block{
+		margin-bottom: 35px;
+		margin-top: 20px;
+	}
+	.our_team_block__title_block{
+		margin-bottom: 0;
+		span{
+			margin-bottom: 0;
+			font-size: 20px;
+			color: #FFF;
+			background-image: none;
+			-webkit-text-fill-color:inherit;
+			text-transform: uppercase;
+		}
+	}
+	.team_img_3, .team_img_1{
+		width: 20%;
+	}
+	.team_img_2{
+		width: 30%;
+	}
+}

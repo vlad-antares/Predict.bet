@@ -1,0 +1,219 @@
+.faq_block{
+	width: 100%;
+	float: left;
+	position: relative;
+}
+.faq_img_1{
+	position: absolute;
+	width: auto;
+	height: auto;
+	top:0;
+	transform:translateY(-25%);
+	left:11%;
+	opacity: 0.2;
+}
+.faq_img_2{
+	position: absolute;
+	width: auto;
+	height: auto;
+	top:65%;
+	left:36%;
+	opacity: 0.1;
+}
+.faq_img_3{
+	position: absolute;
+	width: auto;
+	height: auto;
+	top:36%;
+	left:57.5%;
+	opacity: 0.78;
+}
+.faq_img_4{
+	position: absolute;
+	width: auto;
+	height: auto;
+	right:5%;
+	bottom:0%;
+	transform:translateY(70%);
+	opacity: 0.16;
+}
+.faq_block__title{
+	width: 100%;
+	float: left;
+	span{
+		width: 100%;
+	    float: left;
+	    background-image: linear-gradient(to top, rgba(73, 137, 239, 0.8) 0%, rgba(135, 102, 251, 0.8) 100%);
+	    color: #ffffff;
+	    text-align: center;
+	    font-family: "Arista Pro Trial";
+	    font-size: 34px;
+	    margin-bottom: 60px;
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+	    text-transform: uppercase;
+	    letter-spacing: 1.7px;
+	}
+}
+.faq_block__ul{
+	width: 100%;
+	float: left;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	li{
+		width: 32%;
+		
+		background-color: transparent;
+		
+		margin-bottom: 45px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+}
+.faq_block__ul__li_but__rotate{
+	transform:rotate(45deg);
+	transition:.4s;
+}
+.faq_block__ul__li_but{
+	width: 64px;
+	height: 64px;
+	border-radius: 100%;
+	position: absolute;
+	bottom: -47px;
+	left:50%;
+	cursor: pointer;
+	margin-left: -37px;
+	box-shadow: 0 0 34px 4px rgba(121, 143, 248, 0.44);
+    background-image: -webkit-linear-gradient(bottom, #4989ef 0%, #8766fb 100%);
+    background-image: -o-linear-gradient(bottom, #4989ef 0%, #8766fb 100%);
+    background-image: linear-gradient(to top, #4989ef 0%, #8766fb 100%);
+    display: flex;
+    align-items: center;
+    transition:.4s;
+    i{
+    	font-size: 36px;
+    	color:#fff;
+    	width: 100%;
+    	float: left;
+    	margin-left: 0.5px;
+    	text-align: center;
+    }
+}
+.faq_block__ul__li_but:focus,
+.faq_block__ul__li_but:active{
+	outline:initial;
+}
+.faq_block__ul__li_info_block{
+	width: 100%;
+	float: left;
+	margin-top: 65px;
+	display: none;
+	p{
+		width: 100%;
+		float: left;
+		text-align: center;
+		color: #477099;
+		font-family: 'RR';
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		/* Text style for "Predict.Be" */
+		letter-spacing: 0.8px;
+	}
+}
+.faq_block__ul__text_block{
+	width: 100%;
+	float: left;
+	min-height: 140px;
+	position: relative;
+	margin-bottom: 30px;
+	box-shadow: 0 0 34px 4px rgba(121, 143, 248, 0.22);
+	border-radius: 20px;
+	background-color: #FFF;
+	padding: 0px 24px 15px 23px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.faq_block__ul__text_block__before_but{
+	width: 100%;
+	float: left;
+	min-height: 125px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	& > p{
+		width: 100%;
+		float: left;
+		text-align: center;
+		color: #477099;
+		font-family: 'RR';
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 24px;
+		/* Text style for "What is in" */
+		letter-spacing: 0.9px;
+	}
+}
+@media(max-width:910px){
+	.faq_block__ul li{
+		width: 48%;
+	}
+}
+@media(max-width:700px){
+	.faq_block__ul li{
+		width: 100%;
+		float: left;
+	}
+}
+
+@media(max-width:600px){
+	.faq_block__title span{
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	.faq_block__ul li{
+		margin-bottom: 0px;
+	}
+	.faq_block__ul__text_block{
+		min-height: 40px;
+		padding-top: 0;
+		padding-bottom: 0;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.faq_block__ul__text_block__before_but{
+		min-height: 60px;
+		padding: 0;
+	}
+	.faq_block__ul__text_block__before_but > p{
+		font-size: 15px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.faq_block__ul__li_but{
+		width: 30px;
+		height: 30px;
+		bottom: -19px;
+		transform: translateX(-50%);
+		margin-left: 0;
+		i{
+			font-size: 16px;
+		}
+	}
+	.faq_block__ul__li_info_block{
+		margin-top: 35px;
+		p{
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+	.faq_img_1, .faq_img_2{
+		width: 30%;
+	}
+}
